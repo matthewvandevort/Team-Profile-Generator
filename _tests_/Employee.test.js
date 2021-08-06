@@ -1,9 +1,8 @@
 
-const { it, expect } = require('@jest/globals');
 const Employee = require ('../lib/Employee');
 
 
-const employeeTest = new Employee ('Matthew', 'vandevortmatthew@gmail.com', 1, 'Employeee');
+const employeeTest = new Employee ('Matthew', 'vandevortmatthew@gmail.com', 1, 'Employee');
 
 describe('Employee', () => {
     it('has a name', () => {
@@ -23,3 +22,4 @@ describe('Employee', () => {
         expect(employeeTest.role).toBe('Employee');
     });
 });
+

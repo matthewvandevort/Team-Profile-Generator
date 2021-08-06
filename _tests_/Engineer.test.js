@@ -17,7 +17,7 @@ describe('Engineer', () => {
     });
 
     it('has a role of Engineer', () => {
-        expect(engineerTest.role).toBe('Engineer');
+        expect(engineerTest.getRole()).toBe('Engineer');
     });
 
     it('has a GitHub username', () => {

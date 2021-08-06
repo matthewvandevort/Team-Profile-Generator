@@ -17,7 +17,7 @@ describe('Intern', () => {
     });
 
     it('has a role of Intern', () => {
-        expect(internTest.role).toBe('Intern');
+        expect(internTest.getRole()).toBe('Intern');
     });
 
     it('has a school name', () => {

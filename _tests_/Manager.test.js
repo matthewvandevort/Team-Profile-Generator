@@ -1,6 +1,6 @@
 const Manager = require('../lib/Manager');
 
-const managerTest = new Manager ('Nick Fury', 'furynick@gmail.com', 1, 'Manager', 1);
+const managerTest = new Manager ('Nick Fury', 'furynick@gmail.com', 1, 1, 'Manager');
 
 describe('Manager', () => {
     it('has a name', () => {
@@ -15,12 +15,13 @@ describe('Manager', () => {
     it('has an id that is a number', () => {
         expect(managerTest.id).toEqual(expect.any(Number));
     });
+    
+    it('has an office number', () => {
+        expect(managerTest.officeNumber).toEqual(expect.any(Number));
+    });
 
     it('has a role of Manager', () => {
         expect(managerTest.getRole()).toBe('Manager');
     });
 
-    it('has an office number', () => {
-        expect(managerTest.officeNumber).toEqual(expect.any(Number));
-    });
 });

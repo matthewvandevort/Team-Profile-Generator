@@ -19,7 +19,7 @@ describe('Employee', () => {
     });
 
     it('has a role of Employee', () => {
-        expect(employeeTest.retriveRole()).toBe('Employee');
+        expect(employeeTest.getRole()).toBe('Employee');
     });
 });
 

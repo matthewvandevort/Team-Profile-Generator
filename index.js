@@ -43,9 +43,9 @@ const employeeQuest = [
         ],
     },
     
-],
+];
 
-const engineeerQuest = [
+const engineerQuest = [
     {
         type: 'input',
         message: 'Please enter the engineers name.',
@@ -75,7 +75,8 @@ const engineeerQuest = [
         ],
     },
     
-]
+];
+
 
 const internQuest = [
     {
@@ -107,11 +108,11 @@ const internQuest = [
         ],
     },
     
-]
+];
 
 function engineerQuestSort() {
     inquirer
-        .prompt(engineeerQuest)
+        .prompt(engineerQuest)
         .then(answers => {
             let engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub,);
             teamMembers.push(engineer);
@@ -120,7 +121,7 @@ function engineerQuestSort() {
             } else if (answers.teamMember === 'Intern') {
                 internQuestSort();
             } else {
-                makeHtml();
+                writeHtml();
             }
         })
 }
@@ -136,14 +137,14 @@ function internQuestSort() {
             } else if (answers.teamMember === 'Intern') {
                 internQuestSort();
             } else {
-                makeHtml();
+                writeHtml();
             }
         })
 }
 
 function init(){
     inquirer
-        prompt(employeeQuest)
+        .prompt(employeeQuest)
         .then(answers => {
             const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNum);
             teamMembers.push(manager);
@@ -154,13 +155,13 @@ function init(){
                 console.log('It is an intern.');
                 internQuestSort();
             } else {
-                makeHtml();
+                writeHtml();
             }
         })
 }
 
-function makeHtml() {
-    const makeHtml = fs.watchFile(outputLocation, render(teamMembers), (err) => {
+function writeHtml() {
+    fs.writeFile(outputLocation, render(teamMembers), (err) => {
         err ? console.log(err) : console.log('Succesfully generated the HTML!');
     })
 }

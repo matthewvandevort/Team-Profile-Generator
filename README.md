@@ -1,4 +1,4 @@
-# Search Fore Golf - Project 1
+# Team Profile Generator
 
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 

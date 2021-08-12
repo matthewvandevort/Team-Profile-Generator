@@ -2,7 +2,7 @@
 const Employee = require ('../lib/Employee');
 
 
-const employeeTest = new Employee ('Matthew', 'vandevortmatthew@gmail.com', 1, 'Employee');
+const employeeTest = new Employee ('Matthew',  1, 'vandevortmatthew@gmail.com', 'Employee');
 
 describe('Employee', () => {
     it('has a name', () => {

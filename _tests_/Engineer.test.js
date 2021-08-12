@@ -1,6 +1,6 @@
 const Engineer = require('../lib/Engineer');
 
-const engineerTest = new Engineer ('Tony Stark', 'ironman@gmail.com', 1, 'Engineer', 'tonystark');
+const engineerTest = new Engineer ('Tony Stark', 1, 'ironman@gmail.com', 'Engineer', 'tonystark');
 
 describe('Engineer', () => {
     it('has a name', () => {

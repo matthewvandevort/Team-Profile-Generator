@@ -1,6 +1,6 @@
 const Intern = require('../lib/Intern');
 
-const internTest = new Intern ('Peter Parker', 'spidey@gmail.com', 4, 'Intern', 'Empire State U');
+const internTest = new Intern ('Peter Parker', 4, 'spidey@gmail.com', 'Intern', 'Empire State U');
 
 describe('Intern', () => {
     it('has a name', () => {

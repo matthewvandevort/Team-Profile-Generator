@@ -1,6 +1,6 @@
 const Manager = require('../lib/Manager');
 
-const managerTest = new Manager ('Nick Fury', 'furynick@gmail.com', 1, 1, 'Manager');
+const managerTest = new Manager ('Nick Fury', 1, 'furynick@gmail.com', 1, 'Manager');
 
 describe('Manager', () => {
     it('has a name', () => {

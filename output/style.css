@@ -1,9 +1,26 @@
-.card {
-    box-shadow: 2px 5px 5px rgb( 5, 94, 105 ) !important;
-    border-top-left-radius: 10px !important;
-    background-color: rgb( 241, 248, 248 ) !important;
+body {
+    background: url(https://wallpaperaccess.com/full/1981833.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.jumbotron {
+    background-color: #f3e0e147;
 }
 
-body {
-    background-color: brown;
+.text-center {
+    font-size: 75px;
+    color: #0c1090;
 }
+
+.card-title {
+    text-align: center;
+}
+.card {
+    background-color: rgba(241, 248, 248, 0.73);
+    margin-top: 80px;
+    box-shadow: 2px 5px 5px rgb( 5, 94, 105 );
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+

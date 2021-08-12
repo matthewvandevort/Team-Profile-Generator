@@ -42,6 +42,10 @@ npm test
 
 ![Team Profile Generator](images/TeamGenerator.jpeg)
 
+
+https://user-images.githubusercontent.com/82176811/129276617-ce452878-fb0e-4f89-939f-5ef9cf3f0ef9.mp4
+
+
 # Resources Used
 
 * [MDN Docs](https://developer.mozilla.org/en-US/)
